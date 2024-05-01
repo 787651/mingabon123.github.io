@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Using JavaScript </title>
+    <link rel="stylesheet" href="contact.css.css">
+</head>
+<body>
+
+<header>
+    <center>
+     <h1>Your Feeedback Matters! For the better experience and development.</h1>
+    </center>
+</header>
+     
+
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false">
+
+            <h3>Contact Us</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" rows="4" placeholder="Enter Your Message Here"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "Name: " + document.getElementById("name").value 
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Phone Number: " + document.getElementById("phone").value
+    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+  message => alert("Message Sent!")
+);
+        }
+    </script>
+
+<body>
+<div class="sidenav">
+        <a href="#">          Home</a>
+        <a href="about.html"> About</a>
+        <a href="shop.html">  Shop</a>
+        <a href="contact.html">Feedback</a>
+</div>
+</body>
+
+<div class="footer">
+  <center>        
+        <p>Developed by: James Nicole P. Mingabon <p>
+         
+  </center>
+</div>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cart</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="styles/style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.store.js"></script>
+<script type="text/javascript"
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="cart-page">
+
+<div class="sidenav">
+        <a href="#">          Home</a>
+        <a href="about.html"> About</a>
+        <a href="shop.html">  Shop</a>
+        <a href="contact.html">  Contact</a>
+</div>
+
+<div id="site" class="cartcontent">
+	<header id="masthead">
+	</header>
+	<div id="content">
+		<h1>JAMES FOODHUB TRAY</h1>
+		<form id="shopping-cart" action="cart.html" >
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">FOODS</th>
+					<th scope="col">QUANTITY</th>
+					<th scope="col" colspan="2">AMOUNT</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-tray" class="btn" value="Update Tray" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-tray" class="btn" value="Empty Tray" />
+				</li>
+				<li>
+					<a href="shop.html" class="btn">Mag O-order pa</a>
+				</li>
+				<li>
+					<a href="checkout.html" class="btn">Pa Deliver Na!</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+<footer id="site-info">
+		JAMES FOODHUB <br>  By James Nicole Mingabon
+	</footer>
+
+</body>
+</html>	

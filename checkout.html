@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order | Foodhub</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="styles/style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.store.js"></script>
+<script type="text/javascript"
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="order-page">
+
+<div class="sidenav">
+        <a href="#">          Home</a>
+        <a href="about.html"> About</a>
+        <a href="shop.html">  Shop</a>
+        <a href="contact.html">  Contact</a>
+</div>
+
+<div id="site">
+	<header id="masthead">
+	</header>
+	<div id="content">
+		<h1>Order</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">FOODS</th>
+					<th scope="col">QUANTITY</th>
+					<th scope="col">AMOUNT</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="deliver">
+				<strong>For Deliver</strong>: <span id="ddeliver"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <form action="order.html" id="checkout-order-form">
+		 	<h2>COSTUMER'S INFO</h2>
+		 	
+		 	<fieldset id="fieldset-billing">
+		 		<legend>Transaction</legend>
+		 		<div>
+		 			<label for="name">Name</label>
+		 			<input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="email">Email</label>
+		 			<input type="email" name="email" id="email" data-type="string" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="city">City</label>
+		 			<input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="address">Address</label>
+		 			<input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="zip">ZIP Code</label>
+		 			<input type="text" name="zip" id="zip" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		
+		 	</fieldset>
+		 	
+		 	<p><input type="DELIVER" id="Deliver-order" value="DELIVER" class="btn" /></p>
+		 
+		 </form>
+	</div>
+		 	
+<div class="footer">
+  <center>        
+        <p>Owned and Managed by : James Nicole Mingabon <p>
+         
+  </center>
+</div>
+
+</body>
+</html>	
+
+    
+
